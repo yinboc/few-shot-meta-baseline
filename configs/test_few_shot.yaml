@@ -1,0 +1,5 @@
+dataset: mini-imagenet
+dataset_args: {split: test}
+
+#load_encoder: ./save/
+#load: ./save/

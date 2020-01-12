@@ -1,0 +1,20 @@
+train_dataset: tiered-imagenet
+train_dataset_args: {split: train, augment: resize}
+fs_dataset: tiered-imagenet
+fs_dataset_args: {split: test}
+eval_fs_epoch: 5
+
+model: classifier
+model_args:
+    encoder: resnet12
+    encoder_args: {}
+    classifier: linear-classifier
+    classifier_args: {n_classes: 351}
+
+batch_size: 512
+max_epoch: 120
+optimizer: sgd
+optimizer_args: {lr: 0.1, weight_decay: 5.e-4, milestones: [40, 80]}
+
+save_epoch: 5
+visualize_datasets: true

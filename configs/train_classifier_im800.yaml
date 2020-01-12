@@ -1,0 +1,35 @@
+train_dataset: image-folder
+train_dataset_args: 
+    root_path: ./materials/imagenet/train
+    split_file: ./materials/imagenet800-split.json
+    split: base
+    augment: true
+
+val_dataset: image-folder
+val_dataset_args: 
+    root_path: ./materials/imagenet/val
+    split_file: ./materials/imagenet800-split.json
+    split: base
+
+fs_dataset: image-folder
+fs_dataset_args: 
+    root_path: ./materials/imagenet/val
+    split_file: ./materials/imagenet800-split.json
+    split: novel
+
+eval_fs_epoch: 5
+
+model: classifier
+model_args:
+    encoder: resnet18
+    encoder_args: {}
+    classifier: linear-classifier 
+    classifier_args: {n_classes: 800}
+
+batch_size: 256
+max_epoch: 90
+optimizer: sgd
+optimizer_args: {lr: 0.1, weight_decay: 1.e-4, milestones: [30, 60]}
+
+save_epoch: 5
+visualize_datasets: true

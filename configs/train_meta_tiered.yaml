@@ -1,0 +1,24 @@
+train_dataset: tiered-imagenet
+train_dataset_args: {split: train}
+tval_dataset: tiered-imagenet
+tval_dataset_args: {split: test}
+val_dataset: tiered-imagenet
+val_dataset_args: {split: val}
+
+model: meta-baseline
+model_args: 
+    encoder: resnet12
+    encoder_args: {}
+load_encoder: ./save/classifier_tiered-imagenet_resnet12/epoch-last.pth
+
+n_way: 5
+n_shot: 1
+n_query: 15
+train_batches: 10
+ep_per_batch: 4
+
+max_epoch: 20
+optimizer: sgd
+optimizer_args: {lr: 0.001, weight_decay: 5.e-4}
+
+visualize_datasets: True
