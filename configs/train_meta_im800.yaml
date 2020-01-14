@@ -16,7 +16,7 @@ model_args:
     encoder_args: {}
 load_encoder: ./save/classifier_image-folder_resnet50/epoch-last.pth
 
-freeze_bn: true
+freeze_bn: True
 
 n_way: 5
 n_shot: 1
