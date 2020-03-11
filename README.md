@@ -18,23 +18,23 @@ This repository contains the code for [A New Meta-Baseline for Few-Shot Learning
 
 ## Main Results
 
-### 5-way accuracy (%)
-
-*miniImageNet*
+5-way accuracy (%) on *miniImageNet*
 
 method|1-shot|5-shot
 :-:|:-:|:-:
-Classifier-Baseline (ResNet-12)|58.91|77.76|
-Meta-Baseline (ResNet-12)|63.17|79.26|
+[Baseline++](https://arxiv.org/abs/1904.04232) |51.87|75.68|
+[MetaOptNet](https://arxiv.org/abs/1904.03758) |62.64|78.63|
+Classifier-Baseline |58.91|77.76|
+Meta-Baseline |63.17|79.26|
 
-*tieredImageNet*
+5-way accuracy (%) on *tieredImageNet*
 
 method|1-shot|5-shot
 :-:|:-:|:-:
-Classifier-Baseline (ResNet-12)|68.07|83.74|
-Meta-Baseline (ResNet-12)|68.62|83.29|
+Classifier-Baseline|68.07|83.74|
+Meta-Baseline|68.62|83.29|
 
-*ImageNet-800*
+5-way accuracy (%) on *ImageNet-800*
 
 method|1-shot|5-shot
 :-:|:-:|:-:
@@ -42,18 +42,6 @@ Classifier-Baseline (ResNet-18)|83.51|94.82|
 Meta-Baseline (ResNet-18)|86.39|94.82|
 Classifier-Baseline (ResNet-50)|86.07|96.14|
 Meta-Baseline (ResNet-50)|89.70|96.14|
-
-### Training curve
-
-*miniImageNet* and *tieredImageNet*
-
-![curve1](https://user-images.githubusercontent.com/10364424/76388155-64316800-63a3-11ea-9472-8f5ad43f5abe.png)
-
-*ImageNet-800*
-
-![curve2](https://user-images.githubusercontent.com/10364424/76388163-67c4ef00-63a3-11ea-802d-8762d0be4954.png)
-
-Where *base class generalization* refers to performance on unseen tasks from base classes, *novel class generalization* refers to performance on tasks from novel classes.
 
 ## Running the code
 
