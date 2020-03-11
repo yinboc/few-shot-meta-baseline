@@ -1,5 +1,19 @@
 # A New Meta-Baseline for Few-Shot Learning
 
+This repository contains the code for [A New Meta-Baseline for Few-Shot Learning](https://arxiv.org/abs/2003.04390).
+
+## Citation
+```
+@misc{chen2020new,
+    title={A New Meta-Baseline for Few-Shot Learning},
+    author={Yinbo Chen and Xiaolong Wang and Zhuang Liu and Huijuan Xu and Trevor Darrell},
+    year={2020},
+    eprint={2003.04390},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+
 ## Results on standard benchmarks
 
 ### Preliminaries
