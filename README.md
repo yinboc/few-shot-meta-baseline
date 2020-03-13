@@ -31,7 +31,7 @@ Meta-Baseline |63.17|79.26|
 
 method|1-shot|5-shot
 :-:|:-:|:-:
-[LEO](https://arxiv.org/abs/1904.04232) |66.33|81.44|
+[LEO](https://arxiv.org/abs/1807.05960) |66.33|81.44|
 [MetaOptNet](https://arxiv.org/abs/1904.03758) |65.99|81.56|
 Classifier-Baseline|68.07|83.74|
 Meta-Baseline|68.62|83.29|
