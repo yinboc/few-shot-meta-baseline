@@ -107,7 +107,8 @@ def main(config):
 
     if config.get('_parallel'):
         model = nn.DataParallel(model)
-        fs_model = nn.DataParallel(fs_model)
+        if eval_fs:
+            fs_model = nn.DataParallel(fs_model)
 
     utils.log('num params: {}'.format(utils.compute_n_params(model)))
 
