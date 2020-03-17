@@ -1,12 +1,12 @@
 train_dataset: image-folder
 train_dataset_args: 
-    root_path: ./materials/datasets/imagenet/train
+    root_path: ./materials/imagenet/train
     split_file: ./materials/imagenet800-split.json
     split: base
 
 val_dataset: image-folder
 val_dataset_args:
-    root_path: ./materials/datasets/imagenet/val
+    root_path: ./materials/imagenet/val
     split_file: ./materials/imagenet800-split.json
     split: novel
 
@@ -14,7 +14,7 @@ model: meta-baseline
 model_args: 
     encoder: resnet18
     encoder_args: {}
-load_encoder: ./save/classifier_image-folder_resnet50/epoch-last.pth
+load_encoder: ./save/classifier_image-folder_resnet18/epoch-last.pth
 
 freeze_bn: True
 
