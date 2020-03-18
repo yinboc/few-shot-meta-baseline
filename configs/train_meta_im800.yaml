@@ -1,13 +1,13 @@
 train_dataset: image-folder
 train_dataset_args: 
     root_path: ./materials/imagenet/train
-    split_file: ./materials/imagenet800-split.json
+    split_file: ./materials/imagenet-800_split.json
     split: base
 
 val_dataset: image-folder
 val_dataset_args:
     root_path: ./materials/imagenet/val
-    split_file: ./materials/imagenet800-split.json
+    split_file: ./materials/imagenet-800_split.json
     split: novel
 
 model: meta-baseline
