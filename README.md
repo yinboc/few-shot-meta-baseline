@@ -18,7 +18,9 @@ This repository contains the code for [A New Meta-Baseline for Few-Shot Learning
 
 ## Main Results
 
-5-way accuracy (%) on *miniImageNet*
+*The models on *miniImageNet* and *tieredImageNet* use ResNet-12 as backbone, the channels in each block are **64-128-256-512**, the backbone does **NOT** introduce any additional trick (e.g. DropBlock or wider channel in some recent work).*
+
+#### 5-way accuracy (%) on *miniImageNet*
 
 method|1-shot|5-shot
 :-:|:-:|:-:
@@ -27,7 +29,7 @@ method|1-shot|5-shot
 Classifier-Baseline |58.91|77.76|
 Meta-Baseline |63.17|79.26|
 
-5-way accuracy (%) on *tieredImageNet*
+#### 5-way accuracy (%) on *tieredImageNet*
 
 method|1-shot|5-shot
 :-:|:-:|:-:
@@ -36,7 +38,7 @@ method|1-shot|5-shot
 Classifier-Baseline|68.07|83.74|
 Meta-Baseline|68.62|83.29|
 
-5-way accuracy (%) on *ImageNet-800*
+#### 5-way accuracy (%) on *ImageNet-800*
 
 method|1-shot|5-shot
 :-:|:-:|:-:
