@@ -75,6 +75,8 @@ By default it is 1-shot, modify `shot` in config file for other shots. Models ar
 python train_classifier.py --config configs/train_classifier_mini.yaml
 ```
 
+(The pretrained Classifier-Baselines can be downloaded [here](https://www.dropbox.com/sh/ef2sm8d8qadhg3a/AAAIBotzaCKIdN1dJTvgDk-wa?dl=0))
+
 ### 2. Training Meta-Baseline
 ```
 python train_meta.py --config configs/train_meta_mini.yaml
