@@ -47,6 +47,10 @@ Meta-Baseline (ResNet-18)|86.39|94.82|
 Classifier-Baseline (ResNet-50)|86.07|96.14|
 Meta-Baseline (ResNet-50)|89.70|96.14|
 
+####
+
+Experiments on Meta-Dataset are in [meta-dataset](https://github.com/cyvius96/few-shot-meta-baseline/tree/master/meta-dataset) folder.
+
 ## Running the code
 
 ### Preliminaries
