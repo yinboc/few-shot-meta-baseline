@@ -2,7 +2,7 @@ model: meta-baseline
 model_args: 
     encoder: resnet18
     encoder_args: {}
-load_encoder: ./save/pretrain/epoch-last.pth
+load_encoder: ./save/pretrain-multi/epoch-last.pth
 
 freeze_bn: True
 
