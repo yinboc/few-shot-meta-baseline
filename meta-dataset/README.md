@@ -40,7 +40,7 @@ python train_meta.py --config configs/train_meta.yaml --gpu 0
 
 #### Test Model
 
-Set `load_encoder`/`load' to the .pth file in `configs/test.yaml`, run
+Set `load_encoder`/`load` to the .pth file in `configs/test.yaml`, run
 ```
 python train_meta.py --config configs/test.yaml --name _ --dataset {DATASET_NAME} --gpu 0
 ```
