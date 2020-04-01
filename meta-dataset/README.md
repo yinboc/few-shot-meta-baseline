@@ -23,6 +23,8 @@ MSCOCO|55.7|53.1|43.6
 
 ### Running the code
 
+Run `ulimit -n 100000` before running the code.
+
 #### Training Classifier-Baseline on ILSVRC-2012
 ```
 python train_classifier.py --config configs/train_classifier.yaml --gpu 0,1,2,3
