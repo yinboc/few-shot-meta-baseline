@@ -1,0 +1,13 @@
+model: multi-classifier
+model_args:
+    encoder: resnet18
+    encoder_args: {}
+    classifier: linear-classifier 
+    classifier_args: {}
+    n_cls_lst: [712, 883, 70, 140, 33, 241, 994, 71]
+
+max_epoch: 90
+optimizer: sgd
+optimizer_args: {lr: 0.1, weight_decay: 1.e-4, milestones: [30, 60]}
+
+save_epoch: 5

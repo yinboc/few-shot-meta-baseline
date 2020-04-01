@@ -1,0 +1,17 @@
+model: meta-baseline
+model_args: 
+    encoder: resnet18
+    encoder_args: {}
+load_encoder: ./save/pretrain/epoch-last.pth
+#load: ./save/meta/epoch-last.pth
+
+freeze_bn: True
+
+n_eval: 1000
+no_train: true
+no_val: true
+
+n_train: 1
+max_epoch: 1
+optimizer: sgd
+optimizer_args: {lr: 0.001, weight_decay: 1.e-4}
