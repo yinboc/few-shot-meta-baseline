@@ -232,7 +232,7 @@ if __name__ == '__main__':
     parser.add_argument('--name', default=None)
     parser.add_argument('--tag', default=None)
     parser.add_argument('--gpu', default='0')
-    parser.add_argument('--dataset', default='ilsvrc_2012')
+    parser.add_argument('--dataset', default='all')
     args = parser.parse_args()
 
     config = yaml.load(open(args.config, 'r'), Loader=yaml.FullLoader)
