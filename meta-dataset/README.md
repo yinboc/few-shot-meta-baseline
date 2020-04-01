@@ -1,6 +1,8 @@
 ## Meta-Dataset
 
-The experiments on [Meta-Dataset](https://arxiv.org/abs/1903.03096). The `meta_dataset` folder is cloned from this [repo](h), with disabling its orignal data augmentation and setting "drop_remainer=True" in `data/reader.py`.
+The experiments on [Meta-Dataset](https://arxiv.org/abs/1903.03096).
+
+The `meta_dataset` folder is cloned from this [repo](h), with disabling its orignal data augmentation and setting "drop_remainer=True" in `data/reader.py`. Follow the instructions in that repo and put the data in `./materials/records` with dataset folders in it.
 
 Tensorflow 1.13 (CPU) is used for running data loader in `meta_dataset`.
 
