@@ -99,7 +99,10 @@ def main(config):
         n_batch = 915547 // 256
         with tf.Session() as sess:
             for i_batch in tqdm(range(n_batch)):
-                ds_id = random.randint(0, len(datasets) - 1)
+                if random.randint(0, 1) == 0:
+                    ds_id = 0
+                else:
+                    ds_id = random.randint(1, len(datasets) - 1)
 
                 next_element = iters[ds_id]
                 e, cfr_id = sess.run(next_element)
