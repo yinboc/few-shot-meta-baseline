@@ -2,9 +2,7 @@
 
 The experiments on [Meta-Dataset](https://arxiv.org/abs/1903.03096).
 
-The `meta_dataset` folder is cloned from this [repo](h), with disabling its orignal data augmentation and setting "drop_remainer=True" in `data/reader.py`. Follow the instructions in that repo and put the data in `./materials/records` with dataset folders in it.
-
-Tensorflow 1.13 (CPU) is used for running data loader in `meta_dataset`.
+The `meta_dataset` folder is cloned from [this repo](https://github.com/google-research/meta-dataset), its original data augmentation is disabled and the shuffle_buffer_size is set to be 300 in `data_config.gin`, drop_remainer for the batch loader is set to be True in `data/reader.py`.
 
 ### Results
 
@@ -22,6 +20,10 @@ Traffic Signs|66.2|69.3|59.5
 MSCOCO|55.7|53.1|43.6
 
 ### Running the code
+
+Follow the instructions in [this repo](https://github.com/google-research/meta-dataset) and put the data in `./materials/records` with dataset folders in it.
+
+Tensorflow 1.13 (CPU) is used for running data loader in `meta_dataset`.
 
 Run `ulimit -n 100000` before running the code.
 
