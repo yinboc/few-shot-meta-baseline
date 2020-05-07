@@ -1,5 +1,6 @@
 dataset: mini-imagenet
 dataset_args: {split: test}
 
-#load_encoder: ./save/
-#load: ./save/
+load: ./save/MODEL_FOLDER/EPOCH_X.pth
+
+# Replace load with load_encoder for loading the encoder only (e.g. for testing Classifier-Baseline)
