@@ -6,10 +6,11 @@ This repository contains the code for [Meta-Baseline: Exploring Simple Meta-Lear
 
 ### Citation
 ```
-@inproceedings{Chen2020MetaBaselineES,
+@inproceedings{Chen2021MetaBaselineES,
   title={Meta-Baseline: Exploring Simple Meta-Learning for Few-Shot Learning},
   author={Yinbo Chen and Zhuang Liu and Huijuan Xu and Trevor Darrell and Xiaolong Wang},
-  year={2020}
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2021}
 }
 ```
 
